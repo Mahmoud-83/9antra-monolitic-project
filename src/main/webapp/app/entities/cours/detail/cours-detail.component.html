@@ -1,0 +1,45 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="cours">
+      <h2 data-cy="coursDetailsHeading"><span>Cours</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span>ID</span></dt>
+        <dd>
+          <span>{{ cours.id }}</span>
+        </dd>
+        <dt><span>Titre</span></dt>
+        <dd>
+          <span>{{ cours.titre }}</span>
+        </dd>
+        <dt><span>Description</span></dt>
+        <dd>
+          <span>{{ cours.description }}</span>
+        </dd>
+        <dt><span>Image</span></dt>
+        <dd>
+          <div *ngIf="cours.image">
+            <a (click)="openFile(cours.image, cours.imageContentType)">
+              <img [src]="'data:' + cours.imageContentType + ';base64,' + cours.image" style="max-width: 100%" alt="cours image" />
+            </a>
+            {{ cours.imageContentType }}, {{ byteSize(cours.image) }}
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/cours', cours.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

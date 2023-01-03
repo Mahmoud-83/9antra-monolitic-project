@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-md-3">
+    <img src="content/images/logo9antra.png" alt="Mon image" class="img-fluid">
+
+  </div>
+
+  <div class="col-md-9">
+    <h1 class="display-4"><span>Welcome </span> 9antra.tn</h1>
+
+    <p class="lead">This is your Admin homepage</p>
+
+    <div [ngSwitch]="account !== null">
+      <div class="alert alert-success" *ngSwitchCase="true">
+        <span id="home-logged-message" *ngIf="account">You are logged in as user "{{ account.login }}".</span>
+      </div>
+
+      <div class="alert alert-warning" *ngSwitchCase="false">
+        <span> Please  </span>
+        <a class="alert-link" (click)="login()">Login</a
+        >
+      </div>
+
+     
+    </div>
+  </div>
+</div>

@@ -1,6 +1,49 @@
-<nav data-cy="navbar" class="navbar navbar-dark navbar-expand-md bg-dark">
+<nav class="navbar navbar-light   " style="background-color:rgb(244, 232, 243);"   >
+  <a routerLink="/" > <img src="https://9antra.tn/content/images/LogoBridge.png" alt="9antra"></a>
+
+
+    <ul class="nav justify-content-end me-5">
+      <li class="nav-item">
+        <a class="nav-link text-black " routerLink="/"> <span>home</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-black"  routerLink="paths">Paths</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-black" routerLink="courses">courses</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  text-black" routerLink="events">Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  text-black" routerLink="repots">Reports</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-black  " routerLink="about">About</a>
+      </li>
+      <li class="nav-item">
+      <div class="btn-group me-5 ">
+        <button type="button" class="btn text-white" style="background-color:#af2f64;" >Account
+        <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
+          <button type="button" class="btn text-white dropdown-toggle-split" style="background-color:#af2f64;" ngbDropdownToggle></button>
+          <div class="dropdown-menu" ngbDropdownMenu>
+            <button ngbDropdownItem (click)="login()" >
+              <img src="https://previews.123rf.com/images/martialred/martialred1703/martialred170300022/74131550-ouvrir-la-porte-l-entr%C3%A9e-avec-la-fl%C3%A8che-ou-la-logout-ligne-ic%C3%B4ne-du-vecteur-d-art-pour-les-applicati.jpg" alt="Sign" width ="25px" height="25px">
+               Sign up</button>
+            <button ngbDropdownItem routerLink="account/register" >
+              <img src="https://media.istockphoto.com/id/1280182011/vector/add-new-user-account-or-add-new-friend-icon-in-line-style-person-avatar-symbol-for-perfect.jpg?s=612x612&w=0&k=20&c=kxQVcBN5Hm2jvUmWFcHAA7zenzc0WcJRyBVv4j-o_cU=" alt="Register" width ="25px" height="25px">
+              Register</button>
+          </div>
+        </div>
+      </button>
+      </div>
+    </li>
+    </ul>
+</nav>
+
+<nav data-cy="navbar" class="navbar navbar-dark navbar-expand-md bg-dark"   *jhiHasAnyAuthority="'ROLE_ADMIN'" >
   <div class="container-fluid">
-    <a class="navbar-brand logo9antra" routerLink="/" (click)="collapseNavbar()">
+    <a class="navbar-brand logo9antra" routerLink="homeadmin" (click)="collapseNavbar()">
       <span class="logo9antra-img"></span>
       <span class="navbar-title">9antra.tn </span>
     </a>
@@ -19,7 +62,7 @@
     <div class="navbar-collapse collapse" id="navbarResponsive" [ngbCollapse]="isNavbarCollapsed" [ngSwitch]="account !== null">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-          <a class="nav-link" routerLink="/" (click)="collapseNavbar()">
+          <a class="nav-link" routerLink="homeadmin" (click)="collapseNavbar()">
             <span>
               <fa-icon icon="home"></fa-icon>
               <span>Home</span>
@@ -164,7 +207,7 @@
                 <span>Sign in</span>
               </a>
             </li>
-            
+
           </ul>
         </li>
       </ul>

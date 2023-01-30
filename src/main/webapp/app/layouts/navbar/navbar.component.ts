@@ -25,7 +25,8 @@ export class NavbarComponent implements OnInit {
     private loginService: LoginService,
     private accountService: AccountService,
     private profileService: ProfileService,
-    private router: Router
+    private router: Router,
+
   ) {
     if (VERSION) {
       this.version = VERSION.toLowerCase().startsWith('v') ? VERSION : `v${VERSION}`;
@@ -51,6 +52,7 @@ export class NavbarComponent implements OnInit {
   login(): void {
     this.router.navigate(['/login']);
   }
+
 
   logout(): void {
     this.collapseNavbar();

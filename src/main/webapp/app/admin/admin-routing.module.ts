@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from 'app/home/home.component';
+import { HomeclientComponent } from 'app/homeclient/homeclient.component';
 /* jhipster-needle-add-admin-module-import - JHipster will add admin modules imports here */
 
 @NgModule({
@@ -9,7 +10,7 @@ import { HomeComponent } from 'app/home/home.component';
     RouterModule.forChild([
       {
         path: '',
-        component: HomeComponent,
+        component:HomeComponent ,
       },
       {
         path: 'user-management',

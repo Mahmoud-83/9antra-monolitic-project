@@ -8,6 +8,7 @@ import { Authority } from 'app/config/authority.constants';
 
 import { UserRouteAccessService } from 'app/core/auth/user-route-access.service';
 import { HomeclientComponent } from './homeclient/homeclient.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   imports: [
@@ -17,12 +18,10 @@ import { HomeclientComponent } from './homeclient/homeclient.component';
           path:'',
 
           component: HomeclientComponent,
+      //  component: HomeComponent,
 
         },
-        {
-          path: 'homeclient',
-          component: HomeclientComponent
-        },
+
         {
           path: 'admin',
           data: {
@@ -39,10 +38,10 @@ import { HomeclientComponent } from './homeclient/homeclient.component';
           path: 'login',
           loadChildren: () => import('./login/login.module').then(m => m.LoginModule),
         },
-        // {
-        //   path: '',
-        //   loadChildren: () => import(`./entities/entity-routing.module`).then(m => m.EntityRoutingModule),
-        // },
+         {
+           path: '',
+           loadChildren: () => import(`./entities/entity-routing.module`).then(m => m.EntityRoutingModule),
+         },
         navbarRoute,
         ...errorRoute,
       ],

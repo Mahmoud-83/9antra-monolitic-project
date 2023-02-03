@@ -1,3 +1,57 @@
+<!-- <nav data-cy="navbar" class="navbar navbar-light   " style="background-color:rgb(244, 232, 243);"   >
+  <a routerLink="/" > <img src="https://9antra.tn/content/images/LogoBridge.png" alt="9antra"></a>
+
+
+    <ul class="nav justify-content-end me-5">
+      <li class="nav-item">
+        <a class="nav-link text-black " routerLink="/"> <span>home</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-black"  routerLink="paths">Paths</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-black" routerLink="courses">courses</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  text-black" routerLink="events">Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  text-black" routerLink="repots">Reports</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-black  " routerLink="about">About</a>
+      </li>
+       <li class="nav-item"  >
+      <div class="btn-group me-5 ">
+        <button type="button" class="btn text-white" style="background-color:#af2f64;" >Account
+        <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
+          <button type="button" class="btn text-white dropdown-toggle-split" style="background-color:#af2f64;" ngbDropdownToggle></button>
+          <div class="dropdown-menu" ngbDropdownMenu *ngIf="' ROLE_USER'">
+            <button ngbDropdownItem (click)="login()" >
+              <img src="https://previews.123rf.com/images/martialred/martialred1703/martialred170300022/74131550-ouvrir-la-porte-l-entr%C3%A9e-avec-la-fl%C3%A8che-ou-la-logout-ligne-ic%C3%B4ne-du-vecteur-d-art-pour-les-applicati.jpg" alt="Sign" width ="25px" height="25px">
+               Sign up</button>
+            <button ngbDropdownItem routerLink="account/register" >
+              <img src="https://media.istockphoto.com/id/1280182011/vector/add-new-user-account-or-add-new-friend-icon-in-line-style-person-avatar-symbol-for-perfect.jpg?s=612x612&w=0&k=20&c=kxQVcBN5Hm2jvUmWFcHAA7zenzc0WcJRyBVv4j-o_cU=" alt="Register" width ="25px" height="25px">
+              Register</button>
+
+
+          </div>
+          <div class="dropdown-menu" ngbDropdownMenu *ngIf="'ROLE_USER'">
+         <!-- <button ngbDropdownItem (click)="logout()"  *jhiHasAnyAuthority="'ROLE_USER'" >
+          <button ngbDropdownItem (click)="logout()"   >
+            <img src="https://previews.123rf.com/images/martialred/martialred1703/martialred170300022/74131550-ouvrir-la-porte-l-entr%C3%A9e-avec-la-fl%C3%A8che-ou-la-logout-ligne-ic%C3%B4ne-du-vecteur-d-art-pour-les-applicati.jpg" alt="Sign" width ="25px" height="25px">
+             Sign Out</button>
+
+          </div>
+        </div>
+      </button>
+      </div>
+    </li>
+
+
+
+    </ul>
+</nav> -->
 <section  class="d-flex align-items-center"  style="background-color:rgb(244, 232, 243);">
   <div  class="container">
     <div  class="row">
@@ -27,20 +81,143 @@
 
 
             <style>
-             .fakeimg {
-               height: 200px;
-               width: 200px;
+              .sect {
+
                margin-top: 5%;
                margin-left: 35%;
+             }
+             .iframevid {
+               height: 50%;
+               width: 50%;
+
+
 
              }
              </style>
-           <section>
+           <section  >
              <div class="container-fluid">
-             <div class="fakeimg">
-               <iframe src="https://www.youtube.com/embed/RErc4v6zBOo?autoplay=1"></iframe>
+             <div class="sect">
+               <iframe class="iframevid" src="https://www.youtube.com/embed/RErc4v6zBOo?autoplay=1"></iframe>
              </div>
            </div>
            </section>
 
             <section _ngcontent-apy-c3="" class="about" id="about"> <div _ngcontent-apy-c3="" class="container" data-aos="fade-up"> <div _ngcontent-apy-c3="" class="row content"> <div _ngcontent-apy-c3="" class="d-flex align-items-center flex-row justify-content-center"> <div _ngcontent-apy-c3="" class="col-lg-6"> <div _ngcontent-apy-c3="" class="BoxImg"> <div _ngcontent-apy-c3="" class="imghomeWe1"><img _ngcontent-apy-c3="" alt="" class="img-fluid" src="https://9antra.tn/content/images/Statique/weAreWe1.png"> </div> <div _ngcontent-apy-c3="" class="imghomeWe2"><img _ngcontent-apy-c3="" alt="" class="img-fluid" src="https://9antra.tn/content/images/Statique/weAreWe2.png"> </div> </div> </div> <div _ngcontent-apy-c3="" class="col-lg-6 pt-4 pt-lg-0 ResponsiveAboutUs"> <div _ngcontent-apy-c3="" class="section-title"> <h3 _ngcontent-apy-c3="">We are here to help</h3> </div> <p _ngcontent-apy-c3="" class="txtAbout"> Become who you want to be with The Bridge. Choose your own career path and earn an online degree with hands-on projects and weekly one-on-one mentoring sessions with a dedicated professional in your field. </p> </div> </div> <div _ngcontent-apy-c3="" class="aboutStatistique d-flex"> <div _ngcontent-apy-c3="" class="boxaboutStatistique d-flex align-items-center"> <div _ngcontent-apy-c3="" class="IconsHome"><img _ngcontent-apy-c3="" alt="" class="img-fluid" src="https://9antra.tn/content/images/icons/Students.png"></div> <div _ngcontent-apy-c3=""> <span _ngcontent-apy-c3="">Enrolled Students</span> <strong _ngcontent-apy-c3="">3,800+</strong> </div> </div> <div _ngcontent-apy-c3="" class="boxaboutStatistique d-flex align-items-center"> <div _ngcontent-apy-c3="" class="IconsHome"><img _ngcontent-apy-c3="" alt="" class="img-fluid" src="https://9antra.tn/content/images/icons/Courses.png"></div> <div _ngcontent-apy-c3=""> <span _ngcontent-apy-c3="">Online Courses</span> <strong _ngcontent-apy-c3="">966+</strong> </div> </div> <div _ngcontent-apy-c3="" class="boxaboutStatistique d-flex align-items-center"> <div _ngcontent-apy-c3="" class="IconsHome"><img _ngcontent-apy-c3="" alt="" class="img-fluid" src="https://9antra.tn/content/images/icons/Trainers.png"></div> <div _ngcontent-apy-c3=""> <span _ngcontent-apy-c3="">Trainers</span> <strong _ngcontent-apy-c3="">187+</strong> </div> </div> </div> </div> </div> </section>
+
+
+            <section _ngcontent-xpq-c3="">
+              <div _ngcontent-xpq-c3="" class="container">
+                 <div _ngcontent-xpq-c3="" >
+                   <div _ngcontent-xpq-c3="" class=" d-flex align-items-center justify-content-between ">
+                     <h3 _ngcontent-xpq-c3="">Available trainings</h3>
+                     <a _ngcontent-xpq-c3="" class="ViewAll" href="/courses">View all courses &gt; </a> </div>
+                      <div _ngcontent-xpq-c3="" class=" d-flex justify-content-between gap-3">
+                         <!----><div _ngcontent-xpq-c3="" class="col-xs-12 col-md-4 d-flex">
+                          <div _ngcontent-xpq-c3="" class="">
+                             <div _ngcontent-xpq-c3="" class="ImgRepeaterSearchBox">
+                               <a _ngcontent-xpq-c3="" href="/course/details/andr">
+                                <img _ngcontent-xpq-c3="" alt="Thumbnail [100%x225]" class="img-fluid borderRaduisApp"
+                                data-holder-rendered="true" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                style="cursor: pointer;" src="https://9antra.tn/content/images/course/course_6_preview_img">
+                              </a>
+                            </div>
+                            <div _ngcontent-xpq-c3="" class=" d-flex align-items-center justify-content-between">
+                               <div _ngcontent-xpq-c3="" class="TitleRepeaterSearchBox">Create apps for Android</div>
+                               <div _ngcontent-xpq-c3="" class="NubreView"></div>
+                              </div> <div _ngcontent-xpq-c3="" class="ShortDescRepeaterSearchBox">
+                                 <div _ngcontent-xpq-c3=""><p><span></span></p><p dir="ltr"><span>
+              Android is the most popular operating system
+               on smartphones and tablets. The applications being written in Java,
+              you must know this language before starting this course
+              </span><span>.</span></p><p></p><p><span><br></span></p><p></p><p></p>
+              </div>
+            </div>
+            <div _ngcontent-xpq-c3="" class="IconsRepeaterSearchBox">
+               <div _ngcontent-xpq-c3=""> <i _ngcontent-xpq-c3="">
+                <img _ngcontent-xpq-c3="" alt="" class="img-fluid" src="https://9antra.tn/content/images/icons/exam.png" width ="25px" height="25px">
+              </i> <span _ngcontent-xpq-c3="">Training &amp; Assessment</span>
+            </div> <div _ngcontent-xpq-c3=""> <i _ngcontent-xpq-c3="">
+              <img _ngcontent-xpq-c3="" alt="" class="img-fluid" src="https://9antra.tn/content/images/icons/Certificate.png" width ="25px" height="25px"></i> <span _ngcontent-xpq-c3="">Achievement Certificate</span> </div> <div _ngcontent-xpq-c3=""> <i _ngcontent-xpq-c3=""><img _ngcontent-xpq-c3="" alt="" class="img-fluid" src="https://9antra.tn/content/images/icons/calendar.png" width ="25px" height="25px"></i>
+                 <span _ngcontent-xpq-c3="">8 weeks</span> </div> </div>
+                 <hr _ngcontent-xpq-c3=""> <div _ngcontent-xpq-c3="" class="ViewPlusRepeaterSearchBox">
+                   <a _ngcontent-xpq-c3="" href="/course/details/1"><i _ngcontent-xpq-c3="" class="ri-arrow-right-circle-fill">
+
+                   </i></a>
+                   </div> </div>
+                   </div>
+                   <div _ngcontent-xpq-c3="" class="col-xs-12 col-md-4 d-flex"> <div _ngcontent-xpq-c3="" class="RepeaterSearchBox borderRaduisApp">
+                    <div _ngcontent-xpq-c3="" class="ImgRepeaterSearchBox">
+                      <a _ngcontent-xpq-c3="" href="course/details/ios">
+                        <img _ngcontent-xpq-c3="" alt="Thumbnail [100%x225]" class="img-fluid borderRaduisApp" data-holder-rendered="true" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" style="cursor: pointer;" src="https://9antra.tn/content/images/course/course_7_preview_img"> </a>
+                      </div> <div _ngcontent-xpq-c3="" class="HeaderBoxRepeater d-flex align-items-center justify-content-between">
+                        <div _ngcontent-xpq-c3="" class="TitleRepeaterSearchBox">Create apps for iOS</div>
+                        <div _ngcontent-xpq-c3="" class="NubreView"></div> </div>
+                        <div _ngcontent-xpq-c3="" class="ShortDescRepeaterSearchBox">
+                          <div _ngcontent-xpq-c3=""><span><p dir="ltr"><span>iOS is Apple's operating system for iphones and
+                            ipad. Take a step-by-step guide to building
+                            native apps for the apple world!</span>
+                          </p><p><span><br></span></p>
+                        </span></div> </div>
+                        <div _ngcontent-xpq-c3="" class="IconsRepeaterSearchBox">
+                          <div _ngcontent-xpq-c3=""> <i _ngcontent-xpq-c3="">
+                            <img _ngcontent-xpq-c3="" alt="" class="img-fluid" src="https://9antra.tn/content/images/icons/exam.png"  width ="25px" height="25px" ></i>
+                            <span _ngcontent-xpq-c3="">Training &amp; Assessment</span>
+                          </div> <div _ngcontent-xpq-c3=""> <i _ngcontent-xpq-c3="">
+                            <img _ngcontent-xpq-c3="" alt="" class="img-fluid" src="https://9antra.tn/content/images/icons/Certificate.png" width ="25px" height="25px">
+                          </i> <span _ngcontent-xpq-c3="">Achievement Certificate</span>
+                        </div> <div _ngcontent-xpq-c3="">
+                          <i _ngcontent-xpq-c3="">
+                            <img _ngcontent-xpq-c3="" alt="" class="img-fluid" src="https://9antra.tn/content/images/icons/calendar.png" width ="25px" height="25px">
+                          </i> <span _ngcontent-xpq-c3="">8 weeks</span>
+                         </div> </div> <hr _ngcontent-xpq-c3="">
+                         <div _ngcontent-xpq-c3="" class="ViewPlusRepeaterSearchBox">
+                           <a _ngcontent-xpq-c3="" href="/course/details/3">
+                            <i _ngcontent-xpq-c3="" class="ri-arrow-right-circle-fill">
+
+                            </i></a>
+                           </div> </div>
+                           </div>
+                           <div _ngcontent-xpq-c3="" class="col-xs-12 col-md-4 d-flex">
+                             <div _ngcontent-xpq-c3="" class="RepeaterSearchBox borderRaduisApp">
+                              <div _ngcontent-xpq-c3="" class="ImgRepeaterSearchBox">
+                                <a _ngcontent-xpq-c3="" href="/course/details/python">
+                                  <img _ngcontent-xpq-c3="" alt="Thumbnail [100%x225]" class="img-fluid borderRaduisApp" data-holder-rendered="true" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" style="cursor: pointer;" src="https://9antra.tn/content/images/course/course_8_preview_img">
+                                 </a> </div>
+                                 <div _ngcontent-xpq-c3="" class="HeaderBoxRepeater d-flex align-items-center justify-content-between">
+                                   <div _ngcontent-xpq-c3="" class="TitleRepeaterSearchBox">Learn Python basics </div>
+                                   <div _ngcontent-xpq-c3="" class="NubreView"></div>
+                                   </div>
+                                    <div _ngcontent-xpq-c3="" class="ShortDescRepeaterSearchBox">
+                                      <div _ngcontent-xpq-c3=""><span><p dir="ltr"><span>Python</span>
+                                        <span> is one of the most widely-used programming languages. Learning to code with Python is a </span>
+                                        <span>highly marketable skill </span>
+                                        <span>for any job, and it's not just for full-time software developers - anyone can learn it!</span>
+                                      </p><p><span><br></span></p></span>
+                                    </div> </div> <div _ngcontent-xpq-c3="" class="IconsRepeaterSearchBox">
+                                       <div _ngcontent-xpq-c3=""> <i _ngcontent-xpq-c3="">
+                                        <img _ngcontent-xpq-c3="" alt="" class="img-fluid" src="https://9antra.tn/content/images/icons/exam.png"  width ="25px" height="25px"></i>
+                                         <span _ngcontent-xpq-c3="">Training &amp; Assessment</span>
+                                         </div> <div _ngcontent-xpq-c3=""> <i _ngcontent-xpq-c3="">
+                                          <img _ngcontent-xpq-c3="" alt="" class="img-fluid" src="https://9antra.tn/content/images/icons/Certificate.png" width ="25px" height="25px">
+                                        </i> <span _ngcontent-xpq-c3="">Achievement Certificate</span>
+                                      </div> <div _ngcontent-xpq-c3=""> <i _ngcontent-xpq-c3="">
+                                        <img _ngcontent-xpq-c3="" alt="" class="img-fluid" src="https://9antra.tn/content/images/icons/calendar.png" width ="25px" height="25px">
+                                      </i> <span _ngcontent-xpq-c3="">8 weeks</span> </div>
+                                    </div> <hr _ngcontent-xpq-c3="">
+                                     <div _ngcontent-xpq-c3="" class="ViewPlusRepeaterSearchBox">
+                                      <a _ngcontent-xpq-c3="" href="/course-details/8/details">
+                                        <i _ngcontent-xpq-c3="" class="ri-arrow-right-circle-fill">
+
+                                        </i>
+                                      </a>
+                                     </div>
+                                     </div>
+                                     </div>
+                                     </div>
+                                     </div>
+                                     </div>
+                                    </section>
+
+
+
+
